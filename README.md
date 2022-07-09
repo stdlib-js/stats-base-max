@@ -59,7 +59,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.max;
+})();
 })();
 </script>
 ```
@@ -170,6 +172,7 @@ var v = max.ndarray( N, x, 2, 1 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-max@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var x;
 var i;
@@ -183,6 +186,7 @@ console.log( x );
 var v = max( x.length, x, 1 );
 console.log( v );
 
+})();
 })();
 </script>
 </body>
@@ -285,13 +289,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/dmax]: https://github.com/stdlib-js/stats-base-dmax/tree/umd
+[@stdlib/stats/base/dmax]: https://github.com/stdlib-js/stats-base-dmax/tree/umd/tree/umd
 
-[@stdlib/stats/base/min]: https://github.com/stdlib-js/stats-base-min/tree/umd
+[@stdlib/stats/base/min]: https://github.com/stdlib-js/stats-base-min/tree/umd/tree/umd
 
-[@stdlib/stats/base/nanmax]: https://github.com/stdlib-js/stats-base-nanmax/tree/umd
+[@stdlib/stats/base/nanmax]: https://github.com/stdlib-js/stats-base-nanmax/tree/umd/tree/umd
 
-[@stdlib/stats/base/smax]: https://github.com/stdlib-js/stats-base-smax/tree/umd
+[@stdlib/stats/base/smax]: https://github.com/stdlib-js/stats-base-smax/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
