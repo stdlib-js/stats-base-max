@@ -1,9 +1,10 @@
-"use strict";var s=function(u,r){return function(){return r||u((r={exports:{}}).exports,r),r.exports}};var o=s(function(k,f){
-var y=require('@stdlib/math-base-assert-is-nan/dist'),l=require('@stdlib/math-base-assert-is-positive-zero/dist');function P(u,r,v){var t,a,e,i;if(u<=0)return NaN;if(u===1||v===0)return r[0];for(v<0?a=(1-u)*v:a=0,t=r[a],i=1;i<u;i++){if(a+=v,e=r[a],y(e))return e;(e>t||e===t&&l(e))&&(t=e)}return t}f.exports=P
-});var x=s(function(w,q){
-var Z=require('@stdlib/math-base-assert-is-nan/dist'),O=require('@stdlib/math-base-assert-is-positive-zero/dist');function R(u,r,v,t){var a,e,i,n;if(u<=0)return NaN;if(u===1||v===0)return r[t];for(e=t,a=r[e],n=1;n<u;n++){if(e+=v,i=r[e],Z(i))return i;(i>a||i===a&&O(i))&&(a=i)}return a}q.exports=R
-});var p=s(function(z,m){
-var b=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),c=o(),g=x();b(c,"ndarray",g);m.exports=c
-});var h=p();module.exports=h;
+"use strict";var c=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var x=c(function(C,f){
+var P=require('@stdlib/math-base-assert-is-nan/dist'),b=require('@stdlib/math-base-assert-is-positive-zero/dist');function d(e,r,t,s){var u,v,n,a,i,o;if(u=r.data,v=r.accessors[0],e===1||t===0)return v(u,s);for(a=s,n=v(u,a),o=1;o<e;o++){if(a+=t,i=v(u,a),P(i))return i;(i>n||i===n&&b(i))&&(n=i)}return n}f.exports=d
+});var q=c(function(D,m){
+var Z=require('@stdlib/math-base-assert-is-nan/dist'),g=require('@stdlib/math-base-assert-is-positive-zero/dist'),j=require('@stdlib/array-base-arraylike2object/dist'),k=x();function O(e,r,t,s){var u,v,n,a,i;if(e<=0)return NaN;if(n=j(r),n.accessorProtocol)return k(e,n,t,s);if(e===1||t===0)return r[s];for(v=s,u=r[v],i=1;i<e;i++){if(v+=t,a=r[v],Z(a))return a;(a>u||a===u&&g(a))&&(u=a)}return u}m.exports=O
+});var p=c(function(E,y){
+var R=require('@stdlib/strided-base-stride2offset/dist'),h=q();function w(e,r,t){return h(e,r,t,R(e,t))}y.exports=w
+});var z=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),l=p(),A=q();z(l,"ndarray",A);module.exports=l;
+/** @license Apache-2.0 */
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
