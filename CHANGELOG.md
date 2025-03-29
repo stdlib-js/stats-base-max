@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-05)
+## Unreleased (2025-03-29)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`ad98e51`](https://github.com/stdlib-js/stdlib/commit/ad98e51fff6bb5eda133fe58b0b877fa1f6426c2) - **refactor:** update paths _(by Aayush Khanna)_
 -   [`d77378e`](https://github.com/stdlib-js/stdlib/commit/d77378e620ed84e270e9f1b4b416f42a32965342) - **test:** add tests to achieve 100% code coverage in `stats/base/max` [(#5067)](https://github.com/stdlib-js/stdlib/pull/5067) _(by Aayush Khanna)_
 -   [`66a14d0`](https://github.com/stdlib-js/stdlib/commit/66a14d098c441ecec3909ef07737cf5d698d0456) - **docs:** minor changes in docs of `stats/base/max` [(#5043)](https://github.com/stdlib-js/stdlib/pull/5043) _(by Aayush Khanna)_
 -   [`7793d43`](https://github.com/stdlib-js/stdlib/commit/7793d4347d1e97f221b05522e724dd26ebb96ca7) - **feat:** add support for accessor arrays and refactor `stats/base/max` [(#5008)](https://github.com/stdlib-js/stdlib/pull/5008) _(by Aayush Khanna)_
